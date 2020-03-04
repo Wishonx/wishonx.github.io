@@ -1,0 +1,74 @@
+.mar-auto {
+    margin: auto !important;
+  }
+
+  
+
+  .mar-y-auto{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  @each $margin, $m in $margins {
+    .mar-#{$m}-auto{
+      margin-#{$margin}: auto !important;
+  }
+  }
+
+  @each $breakpoint, $width in $grid-breakpoints {
+    @media (max-width: $width){
+      .text-center-#{$breakpoint}{
+        text-align: center;
+      }
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+  
+
+  @each $margin, $m in $margins {
+    @media (max-width: map-get($grid-breakpoints , xs )) {
+      .mar-#{$m}-auto-xs{
+        margin-#{$margin}: auto !important;
+    }
+    }
+  }
+  @each $margin, $m in $margins {
+    @media (max-width: map-get($grid-breakpoints , s )) {
+      .mar-#{$m}-auto-s{
+        margin-#{$margin}: auto !important;
+    }
+    }
+  }
+  @each $margin, $m in $margins {
+    @media (max-width: map-get($grid-breakpoints , m )) {
+      .mar-#{$m}-auto-m{
+        margin-#{$margin}: auto !important;
+    }
+    }
+  }
+  @each $margin, $m in $margins {
+    @media (max-width: map-get($grid-breakpoints , l )) {
+      .mar-#{$m}-auto-l{
+        margin-#{$margin}: auto !important;
+    }
+    }
+  }
+  @each $margin, $m in $margins {
+    @media (max-width: map-get($grid-breakpoints , xl )) {
+      .mar-#{$m}-auto-xl{
+        margin-#{$margin}: auto !important;
+    }
+    }
+  }
+
+  @each $size, $breakpoint in $grid-breakpoints {
+    @media (max-width: $breakpoint) {
+      .mar-auto-#{$size} {
+        margin: auto !important;
+      }
+    }
+  }

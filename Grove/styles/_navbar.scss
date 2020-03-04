@@ -1,0 +1,107 @@
+@each $breakpoint, $width in $grid-breakpoints {
+    .navbar-collapse-#{$breakpoint} {
+        display: none;
+    }
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: $navbar-padding;
+    box-shadow: 0 8px 6px -6px $light-gray;
+    @include transition;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.nav-li {
+    color: black;
+    text-decoration: none;
+    padding: .3rem 1rem;
+    margin-right: 10px;
+    color: $dark-gray;
+    font-size: 1.1rem;
+    display:inline-block;
+    @include transition;
+}
+
+.menu-btn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 1;
+    right: 3rem;
+    cursor: pointer;
+    @include transition;
+}
+
+.menu-burger_1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 8%;
+    @include transition;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -350%;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 350%;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.nav-active {
+    font-weight: 500;
+    color: $black;
+}
+
+.collapse-li {
+    color: black;
+    text-decoration: none;
+    color: $dark-gray;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+@each $breakpoint, $width in $grid-breakpoints {
+    @media (min-width: $width) {
+
+        .navbar-collapse-#{$breakpoint} {
+            position: relative;
+            display: inline-block;
+        }
+
+    }
+
+    @media (max-width: $width) {
+
+        .menu-btn-#{$breakpoint} {
+            position: relative;
+            display: inline-block;
+        }
+        
+    }
+
+
+        
+
+
+    }

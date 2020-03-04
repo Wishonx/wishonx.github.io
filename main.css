@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient( rgb(179, 40, 179), rgb( 170, 58, 192), rebeccapurple);
+    background-attachment: fixed;
+}
+
+body > div:nth-child(2) {
+  width: 0%;
+  height: 0%;
+  top: -100px;
+}
+
+.navbar {
+    height: 40px;
+    box-shadow: 0 8px 6px -6px #9800a9ff;
+}
+
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+}
+
+.nav-li {
+    color: white;
+    font-family: spartan;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav-li:hover {
+    color: #9800a9ff;
+}
+
+img {
+    width: 80%;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: rgb(146, 146, 146);
+}
+
+.btn-gradient{
+    transition: .5s;
+    background-color: #9800a9ff;
+}
+
+.btn-gradient:hover {
+    background-color: #870078ff;
+    color: white;
+    transition: .5s;
+}
+
+.img {
+    width: 100%;
+    opacity: .7;
+}
+  
+  .fa-html5 {
+    color: rgb(255, 113, 19);
+  }
+  
+  .fa-css3-alt {
+    color: rgb(55, 101, 201);
+
+  }
+  
+  .fa-sass {
+    color: #c70586;
+  }
+
+  .fa-js {
+      color: rgb(238, 255, 0);
+  }
+
+  .fab {
+    font-size: 6rem;
+    padding: 1rem 0;
+  }
+
+  .fa-github {
+    margin-right: 6px;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .footer-fab {
+    color: #707070;
+    margin-right: 6px;
+    font-size: 1.5rem;
+    padding: 1rem .2rem;
+    transition: .5s;
+  }
+
+  .footer-fab:hover {
+    color: #9800a9ff;
+  }
+
+  .shadow-white {
+    box-shadow: 0 8px 6px -6px #9800a9ff;
+  }
+
+
+.bg {
+  background-color: #292929;
+}

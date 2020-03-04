@@ -1,0 +1,49 @@
+@for $i from 1 through $columns{
+    .col-#{$i}{
+        flex: 0 0 100% / $columns * $i;
+        padding-bottom: 2rem;
+    }
+}
+
+@media #{$breakpoint-xsmall}{
+    @for $i from 1 through $columns{
+        .col-s-#{$i}{
+            flex: 0 0 100% / $columns * $i;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media #{$breakpoint-small}{
+    @for $i from 1 through $columns{
+        .col-s-#{$i}{
+            flex: 0 0 100% / $columns * $i;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media #{$breakpoint-medium}{
+    @for $i from 1 through $columns{
+        .col-m-#{$i}{
+            flex: 0 0 100% / $columns * $i;
+            padding-bottom: 2rem;
+        }
+    }
+}
+@media #{$breakpoint-large}{
+    @for $i from 1 through $columns{
+        .col-l-#{$i}{
+            flex: 0 0 100% / $columns * $i;
+            padding-bottom: 2rem;
+        }
+    }
+}
+@media #{$breakpoint-xlarge}{
+    @for $i from 1 through $columns{
+        .col-xl-#{$i}{
+            flex: 0 0 100% / $columns * $i;
+            padding-bottom: 2rem;
+        }
+    }
+}

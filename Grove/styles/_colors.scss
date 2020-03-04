@@ -1,0 +1,28 @@
+@mixin color($color, $var-color){
+    .bg-#{$color}{
+        background-color: $var-color;
+
+    &::before {
+        background-color: $var-color;
+    }
+
+    &::after {
+        background-color: $var-color;
+    }
+    }
+}
+
+@include color(black, $black);
+@include color(white, $white);
+@include color(blue, $blue);
+@include color(light-blue, $light-blue);
+@include color(light-orange, $light-orange);
+@include color(gray, $gray);
+@include color(dark-gray, $dark-gray);
+
+.color-white {
+    color: $white !important;
+}
+
+
+

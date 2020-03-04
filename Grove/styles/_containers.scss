@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+@each $breakpoint, $width in $grid-breakpoints {
+    @each $number, $percentage in $wrapper-percent {
+        @media (min-width: $width){
+            .wrap-#{$breakpoint}-#{$number}{
+                position: relative;
+                width: $percentage;
+                @include centerY;
+        }
+    }
+    }
+}
+
+@each $number, $percentage in $wrapper-percent {
+        .wrap-#{$number}{
+            position: relative;
+            width: $percentage;
+            @include centerY;
+        }
+}

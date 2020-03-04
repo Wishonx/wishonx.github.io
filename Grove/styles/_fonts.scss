@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.9rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 10px;
+    font-family: Source sans pro;
+    font-weight: 600;
+    color: $dark-gray;
+    padding-bottom: 1rem;
+}
+
+p {
+    line-height: 1.4rem;
+    font-family: source sans pro;
+    font-size: 1.2rem;
+}
+
+
