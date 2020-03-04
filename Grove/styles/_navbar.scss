@@ -79,6 +79,7 @@
     color: $dark-gray;
     font-size: 1.3rem;
     margin-top: 20px;
+    @include transition;
 }
 
 @each $breakpoint, $width in $grid-breakpoints {
