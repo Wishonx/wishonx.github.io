@@ -8,7 +8,6 @@ body > div:nth-child(2) {
 }
 
 .navbar {
-    height: 40px;
     box-shadow: 0 8px 6px -6px #9800a9ff;
 }
 
@@ -100,4 +99,16 @@ h1, h2, h3, h4, h5, p {
 
 .bg {
   background-color: #292929;
+}
+
+@media (max-width: 768px) {
+  .container-img {
+    display: none !important;
+  }
+}
+
+.collapse-li {
+  color: #707070;
+  border-bottom: 1px solid #c70586;
+
 }

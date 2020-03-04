@@ -18,11 +18,13 @@
     <title>Grove Framework</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar bg-dark-gray">
         <div class="container-n mar-auto">
-            <div class="menu-btn menu-btn-m mar-l-auto">
-                <span class="menu-burger_1 bg-black"></span>
-            </div>
+                <div class="container">
+                    <div class="menu-btn menu-btn-m mar-x-auto">
+                        <span class="menu-burger_1 bg-black mar-x-auto"></span>
+                    </div>
+                </div>
             <div class="navbar-collapse-s collapse mar-auto mar-y-auto">
                 <ul class="nav text-center">
                     <li><a class="nav-li nav-active" href="">Domovská stránka</a></li>
@@ -32,7 +34,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container container-img">
             <img class="mar-auto img" src="background.png" alt="">
     </div>
     <div class="container bg-dark-gray">
@@ -118,11 +120,13 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     x.style["background-color"] = "#292929";
     x.style["box-shadow"] = "0 8px 6px -6px #9800a9ff";
-    x.style["height"] = "40px";
+    x.style["padding-top"] = "10px";
+    x.style["padding-bottom"] = "10px";
 }else {
-        x.style["background-color"] = "#292929aa";
+        x.style["background-color"] = "#292929ee";
         x.style["box-shadow"] = "none";
-        x.style["height"] = "60px";
+        x.style["padding-top"] = "20px";
+        x.style["padding-bottom"] = "20px";
   }
 }
     </script>

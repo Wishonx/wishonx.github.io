@@ -35,11 +35,11 @@
     display: none;
     width: 35px;
     height: 35px;
-    position: absolute;
+    position: relative;;
     z-index: 1;
-    right: 3rem;
     cursor: pointer;
     @include transition;
+    @include centerX;
 }
 
 .menu-burger_1 {

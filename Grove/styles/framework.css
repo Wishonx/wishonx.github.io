@@ -915,12 +915,14 @@ p {
   display: none;
   width: 35px;
   height: 35px;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  right: 3rem;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .menu-burger_1 {
