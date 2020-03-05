@@ -102,6 +102,10 @@ h1, h2, h3, h4, h5, p {
   background-color: #292929;
 }
 
+.container-img {
+  transition: .4s;
+}
+
 @media (max-width: 768px) {
   .container-img {
     display: none !important;

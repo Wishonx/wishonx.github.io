@@ -25,7 +25,7 @@
                         <span class="menu-burger_1 bg-black mar-x-auto"></span>
                     </div>
                 </div>
-            <div class="navbar-collapse-s collapse mar-auto mar-y-auto">
+            <div class="navbar-collapse-m collapse mar-auto mar-y-auto">
                 <ul class="nav text-center">
                     <li><a class="nav-li nav-active" href="">Domovská stránka</a></li>
                     <li><a class="nav-li" href="#">Manuál</a></li>
@@ -39,14 +39,14 @@
     </div>
     <div class="container bg-dark-gray">
         <div class="container align-center padding text-center-m wrap-xl-80">
-            <div class="col-s-12 col-l-7 col-xl-7 mar-auto">
+            <div class="col-s-12 col-l-7 col-xl-7 mar-auto ">
                 <h2 class="heading-2 wrap-80">Grove Framework</h4>
                     <p class=" wrap-80">Grove Framework umožňuje jednoduše tvořit moderní a responzivní front-end pro webové
                         stránky.</p> <br>
                     <p class="wrap-80">Grove Framework je postavený na technologiích HTML, CSS a JS s použitím speciálně navržených Sass
                         knihoven. To vše zaručuje rychlou a jednoduchou tvorbu front-end pro webové stránky všeho druhu. </p>
             </div>
-            <div class="col-m-12 col-l-5 col-xl-5 mar-auto">
+            <div class="col-s-7 col-l-5 col-xl-5 mar-auto">
                 <img class="img-fluid" src="grove.png" alt="">
             </div>
         </div>
@@ -71,11 +71,11 @@
                 <h3>CSS3</h3>
                 <p>Learn to style websites with CSS3</p>
             </div>
-            <div class="col-l-3 col-m-12 col-s-12"><i class=" fab fa-js"></i>
+            <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-js"></i>
                 <h3>Javascript</h3>
                 <p>Learn more about programming in PHP</p>
             </div>
-            <div class="col-l-3 col-m-12 col-s-12"><i class=" fab fa-sass"></i>
+            <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-sass"></i>
                 <h3>Sass</h3>
                 <p>Learn more about programming in PHP</p>
             </div>
@@ -117,16 +117,22 @@
         
 function scrollFunction() {
     var x = document.getElementsByClassName('navbar')[0];
+    var y = document.getElementsByClassName('container-img')[0];
+    var z = document.getElementsByClassName('img')[0];
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     x.style["background-color"] = "#292929";
     x.style["box-shadow"] = "0 8px 6px -6px #9800a9ff";
     x.style["padding-top"] = "10px";
     x.style["padding-bottom"] = "10px";
+
+    y.style["margin-top"] = "-15%";
 }else {
         x.style["background-color"] = "#292929ee";
         x.style["box-shadow"] = "none";
         x.style["padding-top"] = "20px";
         x.style["padding-bottom"] = "20px";
+
+        y.style["margin-top"] = "0";
   }
 }
     </script>
