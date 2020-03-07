@@ -34,9 +34,9 @@
 /*! ---------- Code ---------- !*/
 
 code {
-    padding: .2rem .5rem;
+    padding: .1rem .4rem;
     margin: 0 .2rem;
-    font-size: 90%;
+    font-size: 80%;
     white-space: nowrap;
     background: $dark-blue;
     border-radius: $border-rounded;
@@ -44,12 +44,15 @@ code {
     overflow-x: scroll;
     color: $white;
     line-height: 1.2rem;
+    
  }
   pre > code {
     display: block;
     padding: 1rem 1.5rem;
     white-space: pre-wrap;
-    overflow-x: auto; 
+    overflow-x: auto;
+    box-shadow: inset 0px 0px 10px 0px #000000;
+    font-size: 90%; 
 }
 
 

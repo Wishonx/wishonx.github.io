@@ -184,17 +184,27 @@ h6 {
   font-size: 1.3rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-family: Source sans pro;
   color: #292929;
   padding-bottom: 1rem;
+  line-height: 1.6rem;
 }
 
 p {
   line-height: 1.4rem;
   font-family: source sans pro;
   font-size: 1.2rem;
+}
+
+a {
+  color: #11003a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .col-1 {
@@ -1770,9 +1780,9 @@ input {
 
 /*! ---------- Code ---------- !*/
 code {
-  padding: .2rem .5rem;
+  padding: .1rem .4rem;
   margin: 0 .2rem;
-  font-size: 90%;
+  font-size: 80%;
   white-space: nowrap;
   background: #11003a;
   border-radius: 5px;
@@ -1787,5 +1797,8 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre-wrap;
   overflow-x: auto;
+  -webkit-box-shadow: inset 0px 0px 10px 0px #000000;
+          box-shadow: inset 0px 0px 10px 0px #000000;
+  font-size: 90%;
 }
 /*# sourceMappingURL=framework.css.map */

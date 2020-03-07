@@ -28,17 +28,26 @@ h6{
     font-size: $h6;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     font-family: Source sans pro;
     color: $dark-gray;
     padding-bottom: 1rem;
+    line-height: 1.6rem;
 }
 
 p {
     line-height: 1.4rem;
     font-family: source sans pro;
     font-size: 1.2rem;
+}
+
+a {
+    color: $dark-blue;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 

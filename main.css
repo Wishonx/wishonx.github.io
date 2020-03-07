@@ -26,7 +26,7 @@ img {
     width: 80%;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
     color: rgb(146, 146, 146);
 }
 
@@ -125,4 +125,8 @@ img {
 
 .grid:nth-child(2n+1) {
   box-shadow: inset -7px 0px 0px -4px #292929;
+}
+
+.pad {
+  padding-bottom: 5rem;
 }

@@ -61,12 +61,12 @@
     </nav>
     <!--main-->
     <div class="container bg-dark-gray">
-        <div class="wrap-m-60">
+        <div class="wrap-m-60 main">
 
 <!--GET STARTED-->
             <!--Tamplate-->
-            <div class="col-12">
-                <h4 id="tamplate">HTML šablona</h4>
+            <div class="col-12 text-center-m">
+                <h3 id="tamplate">HTML šablona</h3>
             <p>V této šabloně najdete vše, co potřebujete pro začátek nové Grove Framework webové stránky.
                 Šablona obsahuje všechny potřebné meta značky pro responzivitu webu. </p>
             </div>
@@ -97,9 +97,9 @@
 
             <div class="col-12 text-center-m">
                 <h3 id="grid">Grid</h3>
-                <h5>Grove Framework využívá mobile-first grid systém o dvanácti sloupcích, který zajišťuje responzivitu webových stránek.</h5>
+                <h6>Grove Framework využívá fluidní grid systém o dvanácti sloupcích, který zajišťuje responzivitu webových stránek. Grove Framework také umožňuje nastavení breakpointů jednotlivých sloupců pro lepší a lehčí stylování mobilních zařízení. Syntaxe je velmi jednoduchá a vhodná i pro začínající vývojáře!</h5>
                 <h4 id="grid">Jak grid funguje:</h5>
-                <p>Pro použití gridu je nutné, aby jeho rodičovský element byl &ltdiv> třídy "container". </p>
+                <p>Pro použití gridu je nutné, aby jeho rodičovský element byl <code>&ltdiv></code> třídy <code>.container</code>. </p>
             </div>
             <div class="container">
                 <div class="col-3 grid">col-3</div><div class="col-6 grid">col-4</div><div class="col-3 grid">col-3</div>
@@ -107,16 +107,16 @@
             <div class="col-12">
                 <pre><code>
 &ltdiv class="container">
-    &ltdiv class="col-3">col-3&lt/div>
-    &ltdiv class="col-6">col-4&lt/div>
-    &ltdiv class="col-3">col-3&lt/div>
+    &ltdiv class="col-3">col-3&lt/div> &lt!-- Tento sloupec zabírá 3/12 (1/4) z třídy container -->
+    &ltdiv class="col-6">col-4&lt/div> &lt!-- Tento sloupec zabírá 4/12 (1/3) z třídy container -->
+    &ltdiv class="col-3">col-3&lt/div> &lt!-- Tento sloupec zabírá 3/12 (1/4) z třídy container -->
 &lt/div>
-                </code></pre>
+                </code></pre><hr class="hr-1">
 
-            <div class="col-12">
+            <div class="col-12 wrap-60 text-center">
                 <p>U gridu lze také určit breakpoint, ve kterém se bude počet sloupců měnit: </p>
                 <br>
-                <table>
+                <table class="mar-auto">
                     <thead>
                         <tr>
                           <th>Zkratka</th>
@@ -148,9 +148,9 @@
                   </table>
             </div>
             <div class="container col-12">
-                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
-                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
-                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení <br> se počet sloupců mění</div>
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení <br> se počet sloupců mění</div>
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení <br> se počet sloupců mění</div>
             </div>
             <div class="col-12">
                 <pre><code>
@@ -160,12 +160,14 @@
     &ltdiv class="col-l-4 col-m-6 col-s-12">Při změně rozlišení se počet sloupců mění&lt/div>
 &lt/div>
                 </code></pre>
-            </div>
+            </div><hr>
 
 <!--BUTTONS-->
             
-            <h4 id="buttons">Tlačítka</h4>
-            <p>Je libo tlačítka malé či velké? Nebo snad tvamé či světlé? S Grove Framework dostanete tolik tlačítek, kolik jen budete potřebovat!</p>
+            <div class="col-12 text-center-m">
+                <h3 id="buttons">Tlačítka</h3>
+                <p>Stylování tlačítek s Grove Framework je velmi jednoduché. Framework také nabízí předpřipravená tlačítka pro rychlé užití. Samotný element <code>&ltbutton></code> nic nedělá, a to aby stylování vlasního tlačítka nebylo zbytečně kontraproduktivní. Pro základní layout tlačítka je tu k dispozici předpřipravená třída <code>.btn</code>.</p>    
+            </div>
              <!--Full button-->
              <div class="col-12 text-center">
                 <button class="btn btn-light">button-light</button>
@@ -178,7 +180,7 @@
 &ltbutton class="btn btn-dark"> button-dark &lt/button>
 &ltbutton class="btn btn-1"> button-1 &lt/button>
                             </code></pre>
-            </div>
+            </div><hr class="hr-1">
 
             <!--Outline-->
             <div class="col-12 text-center buttons">
@@ -192,7 +194,7 @@
 &ltbutton class="btn btn-outline-dark"> outline-dark &lt/button>
 &ltbutton class="btn btn-outline-1"> outline-1 &lt/button>
                             </code></pre>
-            </div>
+            </div><hr class="hr-1">
             <!--Sizes-->
 
             <div class="col-12 text-center">
@@ -208,7 +210,7 @@
 &ltbutton class="btn btn-outline-light btn-l"> large button &lt/button>
 &ltbutton class="btn btn-outline-light btn-xl"> xlarge button &lt/button>
                             </code></pre>
-            </div>
+            </div><hr class="hr-1">
             <!--Borders-->
 
             <div class="col-12 text-center">
@@ -223,7 +225,7 @@
 &ltbutton class="btn btn-outline-light btn-round">round border &lt/button>
                             </code></pre>
             </div>
-        </div>
+        </div><hr>
     </div>
 
     <script>
