@@ -2,24 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/*! ---------- Text styling ---------- !*/
 
 h1 {
-    font-size: 2.2rem;
+    font-size: $h1;
+    font-weight: 600;
 }
 h2 {
-    font-size: 2rem;
+    font-size: $h2;
+    font-weight: 600;
 }
 h3 {
-    font-size: 1.9rem;
+    font-size: $h3;
+    font-weight: 600;
 }
 h4 {
-    font-size: 1.4rem;
+    font-size: $h4;
+}
+h5 {
+    font-size: $h5;
+}
+h6{
+    font-size: $h6;
 }
 
 h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
     font-family: Source sans pro;
-    font-weight: 600;
     color: $dark-gray;
     padding-bottom: 1rem;
 }

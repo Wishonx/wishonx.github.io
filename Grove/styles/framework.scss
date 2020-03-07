@@ -2,6 +2,7 @@
 @import './colors';
 @import './reset';
 @import './fonts';
+@import './mixins';
 @import './grid';
 @import './spacing';
 @import './navbar';
@@ -9,6 +10,7 @@
 @import './cards';
 @import './footer';
 @import './buttons';
+@import './forms';
 
 .img-fluid {
     max-width: 100%;
@@ -23,6 +25,31 @@
 .hr-1 {
     width: 60%;
     background-color: $gray;
+}
+
+.hr-2 {
+    width: 100%;
+}
+
+/*! ---------- Code ---------- !*/
+
+code {
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    font-size: 90%;
+    white-space: nowrap;
+    background: $dark-blue;
+    border-radius: $border-rounded;
+    font-family: roboto mono;
+    overflow-x: scroll;
+    color: $white;
+    line-height: 1.2rem;
+ }
+  pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre-wrap;
+    overflow-x: auto; 
 }
 
 

@@ -11,13 +11,6 @@ body > div:nth-child(2) {
     box-shadow: 0 8px 6px -6px #9800a9ff;
 }
 
-
-.btn {
-    padding: 15px 30px;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
 .nav-li {
     color: white;
     font-family: spartan;
@@ -48,9 +41,14 @@ h1, h2, h3, h4, h5, p {
     transition: .5s;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .img {
-    width: 100%;
-    opacity: .7;
+  width: 100%;
+  opacity: .7;
 }
   
   .fa-html5 {
@@ -116,4 +114,15 @@ h1, h2, h3, h4, h5, p {
   color: #707070;
   border-bottom: 1px solid #c70586;
 
+}
+
+.grid {
+  background-color: #9800a9;
+  text-align: center;
+  margin-bottom: 4px;
+  font-family: roboto mono;
+}
+
+.grid:nth-child(2n+1) {
+  box-shadow: inset -7px 0px 0px -4px #292929;
 }

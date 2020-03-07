@@ -1,0 +1,18 @@
+/*! ---------- Forms ---------- !*/
+
+label{
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: source sans pro;
+    margin-bottom: .5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-family: source sans pro;
+    border-radius: $border-rounded;
+    padding: 5px;
+}

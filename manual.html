@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Grove/styles/framework.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="manual.css">
+
+    <script src="https://kit.fontawesome.com/0eaad8e825.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+
+    <script src="Grove/jquery.js"></script>
+    <script src="Grove/scripts.js"></script>
+
+    <title>Manual - Grove Framework</title>
+</head>
+
+<body>
+
+    <div class="container" style="height: 40vh;">
+        <div class="wrap-60 text-center">
+            <h1>Manuál se vždy hodí</h1>
+            <h5 class="head">Magie? Ale kdeže. Naučte se používat Grove Framework a zefektivněte designování webových stránek!</h4>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar nav-shrink bg-dark-gray">
+        <div class="container-n mar-auto">
+            <div class="container">
+                <div class="menu-btn menu-btn-m mar-x-auto">
+                    <span class="menu-burger_1 bg-black mar-x-auto"></span>
+                </div>
+            </div>
+            <div class="navbar-collapse-m collapse mar-auto mar-y-auto">
+                <ul class="nav text-center">
+                    <li><a class="nav-li nav-active" href="index.html">Domovská stránka</a></li>
+                    <li><a class="nav-li" href="manual.html">Manuál</a></li>
+                    <li><a class="nav-li" href="https://github.com/Wishonx/Framework">Github</a></li>
+                    <li><a class="nav-li navigation">Navigace ▼</a>
+
+                        <ul class="hidden mar-x-auto">
+                            <a href="#tamplate">
+                                <li>HTML šablona</li>
+                            </a>
+                            <a href="#grid">
+                                <li>Grid</li>
+                            </a>
+                            <a href="#buttons">
+                                <li>Tlačítka</li>
+                            </a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--main-->
+    <div class="container bg-dark-gray">
+        <div class="wrap-m-60">
+
+<!--GET STARTED-->
+            <!--Tamplate-->
+            <div class="col-12">
+                <h4 id="tamplate">HTML šablona</h4>
+            <p>V této šabloně najdete vše, co potřebujete pro začátek nové Grove Framework webové stránky.
+                Šablona obsahuje všechny potřebné meta značky pro responzivitu webu. </p>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&lt!DOCTYPE html>
+&lthtml lang="en">
+                    
+&lthead>
+    &lt!--Potřebné meta značky-->
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
+    &lt!--Grove Framework CSS-->
+    &ltlink rel="stylesheet" href="Grove/css/Grove_framework.css">
+                    
+    lttitle>Your Website&lt/title>
+&lt/head>
+&ltbody>
+    &lt!--Obsah stránky-->
+                    
+&lt/body>
+&lt/html>
+                </code></pre>
+            </div><hr>
+
+<!--GRID-->           
+
+            <div class="col-12 text-center-m">
+                <h3 id="grid">Grid</h3>
+                <h5>Grove Framework využívá mobile-first grid systém o dvanácti sloupcích, který zajišťuje responzivitu webových stránek.</h5>
+                <h4 id="grid">Jak grid funguje:</h5>
+                <p>Pro použití gridu je nutné, aby jeho rodičovský element byl &ltdiv> třídy "container". </p>
+            </div>
+            <div class="container">
+                <div class="col-3 grid">col-3</div><div class="col-6 grid">col-4</div><div class="col-3 grid">col-3</div>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltdiv class="container">
+    &ltdiv class="col-3">col-3&lt/div>
+    &ltdiv class="col-6">col-4&lt/div>
+    &ltdiv class="col-3">col-3&lt/div>
+&lt/div>
+                </code></pre>
+
+            <div class="col-12">
+                <p>U gridu lze také určit breakpoint, ve kterém se bude počet sloupců měnit: </p>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Zkratka</th>
+                          <th>Breakpoint</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>0px</td>
+                        </tr>
+                        <tr>
+                            <td>s</td>
+                            <td>576px</td>
+                        </tr>
+                        <tr>
+                            <td>m</td>
+                            <td>768px</td>
+                        </tr>
+                        <tr>
+                            <td>l</td>
+                            <td>992px</td>
+                        </tr>
+                        <tr>
+                            <td>xl</td>
+                            <td>1200px</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="container col-12">
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
+                <div class="col-l-4 col-m-6 col-s-12 grid">Při změně rozlišení se počet sloupců mění</div>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltdiv class="container">
+    &ltdiv class="col-l-4 col-m-6 col-s-12">Při změně rozlišení se počet sloupců mění&lt/div>
+    &ltdiv class="col-l-4 col-m-6 col-s-12">Při změně rozlišení se počet sloupců mění&lt/div>
+    &ltdiv class="col-l-4 col-m-6 col-s-12">Při změně rozlišení se počet sloupců mění&lt/div>
+&lt/div>
+                </code></pre>
+            </div>
+
+<!--BUTTONS-->
+            
+            <h4 id="buttons">Tlačítka</h4>
+            <p>Je libo tlačítka malé či velké? Nebo snad tvamé či světlé? S Grove Framework dostanete tolik tlačítek, kolik jen budete potřebovat!</p>
+             <!--Full button-->
+             <div class="col-12 text-center">
+                <button class="btn btn-light">button-light</button>
+                <button class="btn btn-dark">button-dark</button>
+                <button class="btn btn-1">button-1</button>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltbutton class="btn btn-light"> button-light &lt/button>
+&ltbutton class="btn btn-dark"> button-dark &lt/button>
+&ltbutton class="btn btn-1"> button-1 &lt/button>
+                            </code></pre>
+            </div>
+
+            <!--Outline-->
+            <div class="col-12 text-center buttons">
+                <button class="btn btn-outline-light">outline-light</button>
+                <button class="btn btn-outline-dark">outline-dark</button>
+                <button class="btn btn-outline-1">outline-1</button>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltbutton class="btn btn-outline-light"> outline-light &lt/button>
+&ltbutton class="btn btn-outline-dark"> outline-dark &lt/button>
+&ltbutton class="btn btn-outline-1"> outline-1 &lt/button>
+                            </code></pre>
+            </div>
+            <!--Sizes-->
+
+            <div class="col-12 text-center">
+                <button class="btn btn-outline-light btn-s">small button</button>
+                <button class="btn btn-outline-light btn-m">medium button</button>
+                <button class="btn btn-outline-light btn-l">large button</button>
+                <button class="btn btn-outline-light btn-xl">xlarge button</button>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltbutton class="btn btn-outline-light btn-s"> small button &lt/button>
+&ltbutton class="btn btn-outline-light btn-m"> medium button &lt/button>
+&ltbutton class="btn btn-outline-light btn-l"> large button &lt/button>
+&ltbutton class="btn btn-outline-light btn-xl"> xlarge button &lt/button>
+                            </code></pre>
+            </div>
+            <!--Borders-->
+
+            <div class="col-12 text-center">
+                <button class="btn btn-outline-light">default border</button>
+                <button class="btn btn-outline-light btn-sharp">sharp border</button>
+                <button class="btn btn-outline-light btn-round">round border</button>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&ltbutton class="btn btn-outline-light "> default border &lt/button>
+&ltbutton class="btn btn-outline-light btn-sharp">sharp border &lt/button>
+&ltbutton class="btn btn-outline-light btn-round">round border &lt/button>
+                            </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".navigation").on("click", function () {
+                $('.hidden').slideToggle();
+                /* $('.triangle').slideToggle(1000);*/
+
+
+
+
+
+            });
+        });
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+
+        function scrollFunction() {
+            var x = document.getElementsByClassName('nav-shrink')[0];
+            if (x.style["position"] == "fixed") {
+                x.style["background-color"] = "#292929";
+                x.style["padding-top"] = "10px";
+                x.style["padding-bottom"] = "10px";
+
+                y.style["margin-top"] = "-15%";
+            } else {
+                x.style["background-color"] = "#292929ff";
+                x.style["padding-top"] = "20px";
+                x.style["padding-bottom"] = "20px";
+                y.style["margin-top"] = "0";
+            }
+        }
+    </script>
+
+</body>

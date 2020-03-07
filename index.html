@@ -15,10 +15,11 @@
     <script src="Grove/jquery.js"></script>
     <script src="Grove/scripts.js"></script>
 
-    <title>Grove Framework</title>
+    <title>Domovská stránka - Grove Framework</title>
 </head>
 <body>
-    <nav class="navbar bg-dark-gray">
+    <!-- navbar -->
+    <nav class="navbar nav-shrink bg-dark-gray">
         <div class="container-n mar-auto">
                 <div class="container">
                     <div class="menu-btn menu-btn-m mar-x-auto">
@@ -27,20 +28,22 @@
                 </div>
             <div class="navbar-collapse-m collapse mar-auto mar-y-auto">
                 <ul class="nav text-center">
-                    <li><a class="nav-li nav-active" href="">Domovská stránka</a></li>
-                    <li><a class="nav-li" href="#">Manuál</a></li>
+                    <li><a class="nav-li nav-active" href="index.html">Domovská stránka</a></li>
+                    <li><a class="nav-li" href="manual.html">Manuál</a></li>
                     <li><a class="nav-li" href="https://github.com/Wishonx/Framework">Github</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- header image -->
     <div class="container container-img">
             <img class="mar-auto img" src="background.png" alt="">
     </div>
+    <!-- intro -->
     <div class="container bg-dark-gray">
         <div class="container align-center padding text-center-m wrap-xl-80">
             <div class="col-s-12 col-l-7 col-xl-7 mar-auto ">
-                <h2 class="heading-2 wrap-80">Grove Framework</h4>
+                <h3 class="heading-2 wrap-80">Grove Framework</h3>
                     <p class=" wrap-80">Grove Framework umožňuje jednoduše tvořit moderní a responzivní front-end pro webové
                         stránky.</p> <br>
                     <p class="wrap-80">Grove Framework je postavený na technologiích HTML, CSS a JS s použitím speciálně navržených Sass
@@ -51,34 +54,52 @@
             </div>
         </div>
     </div>
+    <!-- download -->
     <div class="container bg-gradient padding">
         <div class="col-l-6 col-m-12 mar-auto align-center text-center">
          <h4 class="color-white">Vyzkoušejte ihned</h4>
          <p class="color-white">Grove Framework je ke stažení zcela zdarma.</p>
          <p class="color-white">Vytvořte si moderní webové stránky jednoduše, rychle a bez obtíží.</p><br>
-         <button class="btn btn-border-round btn-light btn-gradient">Manuál</button>
-         <button class="btn btn-border-round btn-light" onclick="window.location.href = 'https://github.com/Wishonx/Framework';"><i class="fab fa-github"></i>Stáhnout přes Github</button>
+         <a href="manual.html"><button class="btn btn-m btn-round btn-1 btn-gradient">Manuál</button></a>
+         <button class="btn btn-m btn-round btn-outline-light" onclick="window.location.href = 'https://github.com/Wishonx/Framework';"><i class="fab fa-github"></i>Stáhnout přes Github</button>
         </div>
     </div>
+    <!-- technologies -->
     <div class="container shadow-white text-center padding bg-dark-gray">
         <div class="container wrap-80">
             <div class="col-12"><h3>Použité Technologie:</h3></div>
             <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-html5"></i>
-                <h3>HTML5</h3>
+                <h4>HTML5</h4>
                 <p>Learn to code websites with HTML5</p>
             </div>
             <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
+                <h4>CSS3</h4>
                 <p>Learn to style websites with CSS3</p>
             </div>
             <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-js"></i>
-                <h3>Javascript</h3>
+                <h4>Javascript</h4>
                 <p>Learn more about programming in PHP</p>
             </div>
             <div class="col-l-3 col-m-6 col-s-12"><i class=" fab fa-sass"></i>
-                <h3>Sass</h3>
+                <h4>Sass</h4>
                 <p>Learn more about programming in PHP</p>
             </div>
+        </div>
+    </div>
+    <!-- testy -->
+    <div class="container bg-dark-gray">
+        <div class="wrap-m-60 container">
+            <div class="col-1 grid">col-1</div><div class="col-11 grid">col-11</div>
+            <div class="col-2 grid">col-2</div><div class="col-10 grid">col-10</div>
+            <div class="col-3 grid">col-3</div><div class="col-9 grid">col-9</div>
+            <div class="col-4 grid">col-4</div><div class="col-8 grid">col-8</div>
+            <div class="col-5 grid">col-5</div><div class="col-7 grid">col-7</div>
+            <div class="col-6 grid">col-6</div><div class="col-6 grid">col-6</div>
+            <div class="col-7 grid">col-7</div><div class="col-5 grid">col-5</div>
+            <div class="col-8 grid">col-8</div><div class="col-4 grid">col-4</div>
+            <div class="col-9 grid">col-9</div><div class="col-3 grid">col-3</div>
+            <div class="col-10 grid">col-10</div><div class="col-2 grid">col-2</div>
+            <div class="col-11 grid">col-11</div><div class="col-1 grid">col-1</div>
         </div>
     </div>
     <!--footer-->
@@ -92,51 +113,33 @@
             </div>
         </div>
     </footer>
+    
     <script>
-        $(function () {
-            $(".menu-btn").on("click", function () {
-                $('.collapse').slideToggle().addClass("col-12").css({"position":"relative", "height":"300px"});
-                $('.nav').css({"display":"block", "text-align":"center"}).addClass("mar-auto");
-                $('.nav-li').addClass("collapse-li");
-                $('.collapse-li').removeClass("nav-li");
-                $('.nav li').css("margin-top", "10px");
-                
-
-
-
-
-            });
-        });
-
-        $(document).ready(function() {
-  $('.navbar').scrollToFixed();
-});
-
         window.onscroll = function() {scrollFunction()};
-        
-        
+
+
 function scrollFunction() {
-    var x = document.getElementsByClassName('navbar')[0];
-    var y = document.getElementsByClassName('container-img')[0];
-    var z = document.getElementsByClassName('img')[0];
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    x.style["background-color"] = "#292929";
-    x.style["box-shadow"] = "0 8px 6px -6px #9800a9ff";
-    x.style["padding-top"] = "10px";
-    x.style["padding-bottom"] = "10px";
+var x = document.getElementsByClassName('nav-shrink')[0];
+var y = document.getElementsByClassName('container-img')[0];
+var z = document.getElementsByClassName('img')[0];
+if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+x.style["background-color"] = "#292929";
+x.style["box-shadow"] = "0 8px 6px -6px #9800a9ff";
+x.style["padding-top"] = "10px";
+x.style["padding-bottom"] = "10px";
 
-    y.style["margin-top"] = "-15%";
+y.style["margin-top"] = "-15%";
 }else {
-        x.style["background-color"] = "#292929ee";
-        x.style["box-shadow"] = "none";
-        x.style["padding-top"] = "20px";
-        x.style["padding-bottom"] = "20px";
+x.style["background-color"] = "#292929ff";
+x.style["box-shadow"] = "none";
+x.style["padding-top"] = "20px";
+x.style["padding-bottom"] = "20px";
 
-        y.style["margin-top"] = "0";
-  }
+y.style["margin-top"] = "0";
+}
 }
     </script>
-  
+
 </body>
 
 </html>

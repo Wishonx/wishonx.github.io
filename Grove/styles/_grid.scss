@@ -1,15 +1,18 @@
 @for $i from 1 through $columns{
     .col-#{$i}{
         flex: 0 0 100% / $columns * $i;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 }
+
 
 @media #{$breakpoint-xsmall}{
     @for $i from 1 through $columns{
         .col-s-#{$i}{
             flex: 0 0 100% / $columns * $i;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
+        padding-top: 1rem;
         }
     }
 }
@@ -18,7 +21,8 @@
     @for $i from 1 through $columns{
         .col-s-#{$i}{
             flex: 0 0 100% / $columns * $i;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
+        padding-top: 1rem;
         }
     }
 }
@@ -27,7 +31,8 @@
     @for $i from 1 through $columns{
         .col-m-#{$i}{
             flex: 0 0 100% / $columns * $i;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
+        padding-top: 1rem;
         }
     }
 }
@@ -35,7 +40,8 @@
     @for $i from 1 through $columns{
         .col-l-#{$i}{
             flex: 0 0 100% / $columns * $i;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
         }
     }
 }
@@ -43,7 +49,8 @@
     @for $i from 1 through $columns{
         .col-xl-#{$i}{
             flex: 0 0 100% / $columns * $i;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
+        padding-top: 1rem;
         }
     }
 }

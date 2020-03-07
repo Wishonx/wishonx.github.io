@@ -12,6 +12,7 @@
     padding: $navbar-padding;
     box-shadow: 0 8px 6px -6px $light-gray;
     @include transition;
+    z-index: 100;
 }
 
 .nav {
@@ -24,11 +25,11 @@
     color: black;
     text-decoration: none;
     padding: .3rem 1rem;
-    margin-right: 10px;
     color: $dark-gray;
     font-size: 1.1rem;
     display:inline-block;
     @include transition;
+    text-align: center;
 }
 
 .menu-btn {

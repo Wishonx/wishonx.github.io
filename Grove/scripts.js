@@ -1,3 +1,29 @@
+/*                          */
+
+$(function () {
+    $(".menu-btn").on("click", function () {
+        $('.collapse').slideToggle().addClass("col-12").css({"position":"relative", "height":"300px"});
+        $('.nav').css({"display":"block", "text-align":"center"}).addClass("mar-auto");
+        $('.nav-li').addClass("collapse-li");
+        $('.collapse-li').removeClass("nav-li");
+        $('.nav li').css("margin-top", "10px");
+        
+
+
+
+
+    });
+});
+
+$(document).ready(function() {
+$('.navbar').scrollToFixed();
+});
+
+
+
+
+
+
 /*
  * ScrollToFixed
  * https://github.com/bigspotteddog/ScrollToFixed

@@ -1,0 +1,54 @@
+// --------------transitions-------------- 
+
+@mixin transition{
+    transition: all .4s ease-in-out;
+  }
+  
+  @mixin transition-fast{
+    transition: all .3s ease-in-out;
+  }
+  
+// --------------center-------------- 
+
+  @mixin centerX{
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  @mixin centerY{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  @mixin center{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+// --------------button presets-------------- 
+@mixin button-preset($background, $color) {
+    color: $color;
+    background-color: $background;
+    border: 1px solid $color;
+    @include transition-fast;
+    &:hover {
+        box-shadow: 0px 0px 0px 1.2px $color;
+    }
+}
+
+// --------------button outline presets-------------- 
+@mixin button-outline-preset($color, $background) {
+    color: $color;
+    border: 1px solid $color;
+    @include transition-fast;
+    &:hover {
+        color: $background;
+        background-color: $color;
+        box-shadow: 0px 0px 0px 1.2px $background;
+    }
+}
