@@ -7,6 +7,10 @@ body > div:nth-child(2) {
   display: none !important;
 }
 
+a {
+  color: #9800a9;
+}
+
 .navbar {
     box-shadow: 0 8px 6px -6px #9800a9ff;
 }
@@ -121,6 +125,7 @@ img {
   text-align: center;
   margin-bottom: 4px;
   font-family: roboto mono;
+  border-radius: 5px;
 }
 
 .grid:nth-child(2n+1) {
@@ -130,3 +135,5 @@ img {
 .pad {
   padding-bottom: 5rem;
 }
+
+
