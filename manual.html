@@ -56,6 +56,9 @@
                             <a href="#tables">
                                 <li>Tabulky</li>
                             </a>
+                            <a href="#code">
+                                <li>Kód</li>
+                            </a>
                         </ul>
                     </li>
                 </ul>
@@ -210,8 +213,8 @@
             </div><hr class="hr-1">
             <!--Sizes-->
             <div class="col-12 text-center-m">
-                <h4>Veikosti tlačítek</h4>
-                <p>Pro výběr velikosti tlačítka stačí k tlačítku přidat třída <code>.btn-{velikost}</code>, kde za {velikost} vložíte vybranou veikost tlačítka:</p>
+                <h4>Velikosti tlačítek</h4>
+                <p>Pro výběr velikosti tlačítka stačí k tlačítku přidat třída <code>.btn-{velikost}</code>, kde za {velikost} vložíte vybranou velikost tlačítka:</p>
              </div>
             <div class="col-12 text-center">
                 <button class="btn btn-outline-light btn-s">btn-s</button>
@@ -292,50 +295,30 @@
     &lt/tbody>
 &lt/table>
                             </code></pre>
-            </div><hr class="hr-1">
-            <div class="col-12">
-                <table class="mar-auto table-dark">
-                    <thead>
-                        <tr>
-                          <th>Jméno</th>
-                          <th>Příjmení</th>
-                          <th>Bydliště</th>
-                        </tr>
-                      </thead>
-                    <tbody>
-                        <tr>
-                            <td>František</td>
-                            <td>Novotný</td>
-                            <td>Praha</td>
-                        </tr>
-                        <tr>
-                            <td>Robert</td>
-                            <td>Vránský</td>
-                            <td>Liberec</td>
-                        </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="col-12">
-                <pre><code>
-&lttable class="table-dark">
-    &ltthead>
-        &lttr>
-            &ltth>Jméno&lt/th> &ltth>Příjmení&lt/th> &ltth>Bydliště&lt/th>
-        &lt/tr>
-    &lt/thead>
-    &lttbody>
-        &lttr>
-            &lttd>František&lt/td> &lttd>Novotný&lt/td> &lttd>Praha&lt/td>
-        &lt/tr>
-        &lttr>
-            &lttd>Robert&lt/td> &lttd>Stránský&lt/td> &lttd>Liberec&lt/td>
-    &lt/tbody>
-&lt/table>
-                            </code></pre>
             </div><hr>
-        </div>
+<!--FORMS-->
+<div class="col-12 text-center-m">
+    <h3 id="code">Kód</h3>
+    <p>S grove Frameworkem se také nabízí možnost vytvářet stylyzované bloky kódu pomocí užití elementu <code>&ltcode></code> zabaleného v elementu <code>&ltpre></code>. Pro zapsání kódu v textu použijte pouze element <code>&ltcode></code>.</p>
+    <p>Nezapomeňte také, že element <code>&ltpre></code> zobrazí všechny bílé mezery.</p>    
+</div>
+<div class="container">
+    <div class="col-12">
+        <pre>
+            <code>
+&ltpre>
+    &ltcode>
+        &lt!--Blok kódu který chcete zapsat-->
+    &lt/code>
+&lt/pre>
+
+&ltp>Takhle lze zapsat &ltcode>kód&lt/code> v textu.&lt/p>
+            </code>
+        </pre>
     </div>
+</div>
+</div>
+</div>
     <!--footer-->
     <footer class="footer bg-dark-gray">
         <div class="container wrap-xl-80 text-center">

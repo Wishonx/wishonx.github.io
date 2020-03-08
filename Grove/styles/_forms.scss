@@ -10,9 +10,20 @@ label{
 
 input {
     display: block;
-    width: 100%;
+    max-width: 100%;
     font-size: 1rem;
     font-family: source sans pro;
     border-radius: $border-rounded;
     padding: 5px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: transparent;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    max-width: 100%;
+    display: inline-block;
 }

@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     align-items: center;
     padding: $navbar-padding;
-    box-shadow: 0 8px 6px -6px $light-gray;
     @include transition;
     z-index: 100;
 }

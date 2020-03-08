@@ -975,8 +975,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem 1rem;
-  -webkit-box-shadow: 0 8px 6px -6px silver;
-          box-shadow: 0 8px 6px -6px silver;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   z-index: 100;
@@ -1605,6 +1603,35 @@ a {
   display: block;
 }
 
+/*! ---------- Forms ---------- !*/
+label {
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+  font-family: source sans pro;
+  margin-bottom: .5rem;
+}
+
+input {
+  display: block;
+  max-width: 100%;
+  font-size: 1rem;
+  font-family: source sans pro;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: transparent;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  max-width: 100%;
+  display: inline-block;
+}
+
 /*! ---------- Buttons ---------- !*/
 .btn {
   padding: 15px 30px;
@@ -1735,24 +1762,6 @@ a {
 
 .btn-xl {
   font-size: 2rem;
-}
-
-/*! ---------- Forms ---------- !*/
-label {
-  display: block;
-  text-align: left;
-  font-size: 1.2em;
-  font-family: source sans pro;
-  margin-bottom: .5rem;
-}
-
-input {
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  font-family: source sans pro;
-  border-radius: 5px;
-  padding: 5px;
 }
 
 .img-fluid {
