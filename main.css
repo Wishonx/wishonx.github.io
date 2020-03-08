@@ -72,10 +72,6 @@ img {
     color: #c70586;
   }
 
-  .fa-js {
-      color: rgb(238, 255, 0);
-  }
-
   .fab {
     font-size: 6rem;
     padding: 1rem 0;
@@ -85,6 +81,10 @@ img {
     margin-right: 6px;
     font-size: 1.3rem;
     padding: 0;
+  }
+
+  .footer{
+    box-shadow: inset 0px 5px 7px -5px #9800a9;
   }
 
   .footer-fab {
