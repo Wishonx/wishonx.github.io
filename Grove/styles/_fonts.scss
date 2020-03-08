@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Source sans pro;
     color: $dark-gray;
     padding-bottom: 1rem;
-    line-height: 1.6rem;
 }
 
 p {
@@ -46,9 +45,6 @@ p {
 a {
     color: $dark-blue;
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 

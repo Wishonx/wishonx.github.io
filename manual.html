@@ -53,6 +53,9 @@
                             <a href="#buttons">
                                 <li>Tlačítka</li>
                             </a>
+                            <a href="#tables">
+                                <li>Tabulky</li>
+                            </a>
                         </ul>
                     </li>
                 </ul>
@@ -116,7 +119,7 @@
             <div class="col-12 wrap-60 text-center">
                 <p>U gridu lze také určit breakpoint, ve kterém se bude počet sloupců měnit: </p>
                 <br>
-                <table class="mar-auto">
+                <table class="mar-auto table-light">
                     <thead>
                         <tr>
                           <th>Zkratka</th>
@@ -226,6 +229,100 @@
                             </code></pre>
             </div>
         </div><hr>
+<!--TABLES-->
+
+            <div class="col-12 text-center-m">
+                <h3 id="tables">Tabulky</h3>
+                <p>Grove Framework také nabízí jednoduchou tabulku ve světlém a tmavém provedení. Základní elementy tabulky nejsou stylovány, a tak se to elementu <code>&lttable></code> musí přidat třída <code>.table-light</code> nebo <code>.table-dark</code>.</p>    
+            </div>
+            <div class="col-6">
+                <table class="mar-auto table-light">
+                    <thead>
+                        <tr>
+                          <th>Jméno</th>
+                          <th>Příjmení</th>
+                          <th>Bydliště</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        <tr>
+                            <td>František</td>
+                            <td>Novotný</td>
+                            <td>Praha</td>
+                        </tr>
+                        <tr>
+                            <td>Robert</td>
+                            <td>Vránský</td>
+                            <td>Liberec</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&lttable class="table-light">
+    &ltthead>
+        &lttr>
+            &ltth>Jméno&lt/th> &ltth>Příjmení&lt/th> &ltth>Bydliště&lt/th> &ltth>Věk&lt/th>
+        &lt/tr>
+    &lt/thead>
+    &lttbody>
+        &lttr>
+            &lttd>František&lt/td> &lttd>Novotný&lt/td> &lttd>Praha&lt/td> &lttd>25&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>Robert&lt/td> &lttd>Stránský&lt/td> &lttd>Liberec&lt/td> &lttd>62&lt/td>
+        &lt/tr>
+    &lt/tbody>
+&lt/table>
+                            </code></pre>
+            </div><hr class="hr-1">
+            <div class="col-12">
+                <table class="mar-auto table-dark">
+                    <thead>
+                        <tr>
+                          <th>Jméno</th>
+                          <th>Příjmení</th>
+                          <th>Bydliště</th>
+                          <th>Věk</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        <tr>
+                            <td>František</td>
+                            <td>Novotný</td>
+                            <td>Praha</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Robert</td>
+                            <td>Vránský</td>
+                            <td>Liberec</td>
+                            <td>62</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-12">
+                <pre><code>
+&lttable class="table-dark">
+    &ltthead>
+        &lttr>
+            &ltth>Jméno&lt/th> &ltth>Příjmení&lt/th> &ltth>Bydliště&lt/th> &ltth>Věk&lt/th>
+        &lt/tr>
+    &lt/thead>
+    &lttbody>
+        &lttr>
+            &lttd>František&lt/td> &lttd>Novotný&lt/td> &lttd>Praha&lt/td> &lttd>25&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>Robert&lt/td> &lttd>Stránský&lt/td> &lttd>Liberec&lt/td> &lttd>62&lt/td>
+        &lt/tr>
+    &lt/tbody>
+&lt/table>
+                            </code></pre>
+            </div><hr>
+        </div>
     </div>
 
     <script>

@@ -189,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Source sans pro;
   color: #292929;
   padding-bottom: 1rem;
-  line-height: 1.6rem;
 }
 
 p {
@@ -202,10 +201,6 @@ p {
 a {
   color: #11003a;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .col-1 {
@@ -1801,5 +1796,32 @@ pre > code {
   -webkit-box-shadow: inset 0px 0px 10px 0px #000000;
           box-shadow: inset 0px 0px 10px 0px #000000;
   font-size: 90%;
+}
+
+/*! ---------- Tables ---------- !*/
+.table-light td, .table-light th {
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #cacaca;
+}
+
+.table-light th {
+  background-color: #464646;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.table-dark td, .table-dark th {
+  color: #292929;
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #292929;
+}
+
+.table-dark th {
+  background-color: #cacaca;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=framework.css.map */

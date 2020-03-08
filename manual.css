@@ -88,24 +88,6 @@ h4 {
     box-shadow: none;
   }
 
-  th,
-  td {
-    padding: 10px 20px;
-    text-align: left;
-    border-bottom: 1px solid #E1E1E1; }
-  
-
-    td, th {
-        text-align: center;
-        color: white;
-    }
-
-    th {
-        background-color: rgba(142, 0, 170, .3);
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-
     td:nth-child(2n-1){
         background-color: rgb(44, 44, 44);
     }
@@ -115,3 +97,7 @@ h4 {
             background-color: transparent;
             padding: 5rem 0;
         }
+        .navigation {
+            display: none;
+        }
+    }

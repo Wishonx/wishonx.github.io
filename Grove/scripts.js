@@ -1,25 +1,50 @@
 /*                          */
 
-$(function () {
-    $(".menu-btn").on("click", function () {
-        $('.collapse').slideToggle().addClass("col-12").css({"position":"relative", "height":"300px"});
-        $('.nav').css({"display":"block", "text-align":"center"}).addClass("mar-auto");
-        $('.nav-li').addClass("collapse-li");
-        $('.collapse-li').removeClass("nav-li");
-        $('.nav li').css("margin-top", "10px");
+
+
+
+        $(function () {
+            $(".menu-btn").on("click", function () {
+                $('.collapse').slideToggle().addClass("col-12").css({"position":"relative", "height":"300px"});
+                $('.nav').css({"display":"block", "text-align":"center"});
+                $('.nav-li').addClass("collapse-li");
+                $('.collapse-li').removeClass("nav-li");
+                $('.nav li').css("margin-top", "10px");
+                
         
+        
+        
+        
+            });
+            
+        });
 
-
-
-
-    });
-});
+        /*$(document).ready(function() {
+            // Optimalisation: Store the references outside the event handler:
+            var $window = $(window);
+        
+            function checkWidth() {
+                var windowsize = $window.width();
+                if (windowsize > 768) {
+                    //if the window is greater than 440px wide then turn on jScrollPane..
+                    $('.collapse').css({"display":"block",});
+                    $('.nav li a').removeClass("collapse-li").addClass("nav-li");
+                    $('.nav li').css("margin-top", "0px");
+                    $('.collapse').removeClass("col-12");
+                    $('.nav').css({"display":"flex", "text-align":""});
+                }else{
+                    $('.collapse').css("display", "none");
+                }
+            }
+            // Execute on load
+            checkWidth();
+            // Bind event listener
+            $(window).resize(checkWidth);
+        });*/
 
 $(document).ready(function() {
 $('.navbar').scrollToFixed();
 });
-
-
 
 
 
