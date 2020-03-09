@@ -17,16 +17,6 @@
     }
 }
 
-@media #{$breakpoint-small}{
-    @for $i from 1 through $columns{
-        .col-s-#{$i}{
-            flex: 0 0 100% / $columns * $i;
-            padding-bottom: 1rem;
-        padding-top: 1rem;
-        }
-    }
-}
-
 @media #{$breakpoint-medium}{
     @for $i from 1 through $columns{
         .col-m-#{$i}{
