@@ -3,7 +3,7 @@
 
 
 
-        $(function () {
+        /*$(function () {
             $(".menu-btn").on("click", function () {
                 $('.collapse').slideToggle().addClass("col-12").css({"position":"relative", "height":"300px"});
                 $('.nav').css({"display":"block", "text-align":"center"});
@@ -17,7 +17,18 @@
         
             });
             
-        });
+        });*/ 
+
+        $(function () {
+            $(".menu-btn").on("click", function () {
+                $('.nav-collapse').slideToggle();
+        
+        
+        
+        
+            });
+            
+        })
 
         /*$(document).ready(function() {
             // Optimalisation: Store the references outside the event handler:

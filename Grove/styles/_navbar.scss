@@ -1,8 +1,4 @@
-@each $breakpoint, $width in $grid-breakpoints {
-    .navbar-collapse-#{$breakpoint} {
-        display: none;
-    }
-}
+
 
 .navbar {
     position: sticky;
@@ -19,6 +15,21 @@
     display: flex;
     list-style: none;
 }
+
+.nav-collapse{
+    position: relative;
+    display: none;
+    list-style: none;
+    padding-top: 1rem;
+    & a {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
 
 .nav-li {
     color: black;
@@ -88,7 +99,18 @@
         .navbar-collapse-#{$breakpoint} {
             position: relative;
             display: inline-block;
-        }
+            & .nav-collapse {
+                display: flex !important;
+                width: 100%;
+                padding-top: 0;
+            }
+            & .nav-collapse a {
+                padding: .3rem 1rem;
+            }
+            
+    
+        } 
+        
 
     }
 

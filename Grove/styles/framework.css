@@ -943,26 +943,6 @@ a {
   }
 }
 
-.navbar-collapse-xs {
-  display: none;
-}
-
-.navbar-collapse-s {
-  display: none;
-}
-
-.navbar-collapse-m {
-  display: none;
-}
-
-.navbar-collapse-l {
-  display: none;
-}
-
-.navbar-collapse-xl {
-  display: none;
-}
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -986,6 +966,18 @@ a {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+}
+
+.nav-collapse {
+  position: relative;
+  display: none;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.nav-collapse a {
+  padding: 1rem;
+  text-align: center;
 }
 
 .nav-li {
@@ -1059,6 +1051,16 @@ a {
     position: relative;
     display: inline-block;
   }
+  .navbar-collapse-xs .nav-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding-top: 0;
+  }
+  .navbar-collapse-xs .nav-collapse a {
+    padding: .3rem 1rem;
+  }
 }
 
 @media (max-width: 0px) {
@@ -1072,6 +1074,16 @@ a {
   .navbar-collapse-s {
     position: relative;
     display: inline-block;
+  }
+  .navbar-collapse-s .nav-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding-top: 0;
+  }
+  .navbar-collapse-s .nav-collapse a {
+    padding: .3rem 1rem;
   }
 }
 
@@ -1087,6 +1099,16 @@ a {
     position: relative;
     display: inline-block;
   }
+  .navbar-collapse-m .nav-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding-top: 0;
+  }
+  .navbar-collapse-m .nav-collapse a {
+    padding: .3rem 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1101,6 +1123,16 @@ a {
     position: relative;
     display: inline-block;
   }
+  .navbar-collapse-l .nav-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding-top: 0;
+  }
+  .navbar-collapse-l .nav-collapse a {
+    padding: .3rem 1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1114,6 +1146,16 @@ a {
   .navbar-collapse-xl {
     position: relative;
     display: inline-block;
+  }
+  .navbar-collapse-xl .nav-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding-top: 0;
+  }
+  .navbar-collapse-xl .nav-collapse a {
+    padding: .3rem 1rem;
   }
 }
 
